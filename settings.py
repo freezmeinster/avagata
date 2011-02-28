@@ -79,7 +79,10 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'avagata.urls'
 
 TEMPLATE_DIRS = (
-	os.path.join(os.path.dirname(__file__),'templates')
+	os.path.join(os.path.dirname(__file__),'templetes')
+)
+PROJECT_ROOT = (
+	os.path.join(os.path.dirname(__file__),'')
 )
 
 INSTALLED_APPS = (
@@ -89,5 +92,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.admin',
+    'django.contrib.admindocs',
+    'system',
     'belajar',
 )
