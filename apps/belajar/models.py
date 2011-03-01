@@ -14,7 +14,7 @@ class MataPelajaran(models.Model):
 class MateriPelajaran(models.Model):
 	matapelajaran = models.ForeignKey(MataPelajaran)
 	judul = models.CharField(max_length=255)
-	konten = models.TextField()
+	isi = models.TextField()
 	tgl_post = models.DateField()
 	penulis = models.ForeignKey(UserProfile)
 	
